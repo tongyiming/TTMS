@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.dao.OrderDAO">
+
+    <!-- insert语句 -->
+    <insert id="insertOrder" parameterType="Order" keyProperty="id">
+
+        <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
+            SELECT @@IDENTITY
+        </selectKey>
+
+        insert into orderform(
+        user_id,
+        seat_id,
+        sche_id,
+        order_status)
+        values
+        (
+        #{user_id},
+        #{seat_id},
+        #{sche_id},
+        #{order_status})
+    </insert>
+
+    <!-- select语句 -->
+    <select id="selectAllOrder" resultType="Order">
+        select * from orderform
+    </select>
+
+    <select id="selectAllOrderById" parameterType="int" resultType="Order">
+        select * from orderform
+        where user_id=#{user_id}
+    </select>
+
+    <select id="selectOrderFromOrderStatus" parameterType="int" resultType="Order">
+        select * from orderform
+        where orderform.order_status = #{order_status}
+    </select>
+
+    <select id="selectOrderFromOrderStatusById" parameterType="int" resultType="Order">
+        select * from orderform
+        where order_status = #{0}
+        AND
+        user_id=#{1}
+    </select>
+
+    <!-- update语句 -->
+    <update id="updateOrderFromOrderStatus" parameterType="int">
+        update orderform set
+        order_status=#{1}
+        where id=#{0}
+    </update>
+
+    <!-- delete语句 -->
+    <delete id="deleteOrderFromId" parameterType="int">
+        delete from orderform
+        where id=#{id}
+    </delete>
+
+
+</mapper>

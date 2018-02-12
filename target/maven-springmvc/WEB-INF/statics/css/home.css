@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color: #5a5a5a;
+        }
+
+        /* 轮播广告 */
+
+        .carousel {
+            height: 500px;
+            margin-bottom: 60px;
+        }
+
+        .carousel .item {
+            height: 500px;
+            background-color: #000;
+        }
+
+        .carousel .item img {
+            width: 100%;
+        }
+		
+		#login-register
+		{
+			position:absolute;
+			width:400px; 
+			height:300px;
+            background:#03F;
+            background-image: -webkit-radial-gradient(cover, #ADD8E6, #FFFAFA);
+            background-image: -moz-radial-gradient(cover, #ADD8E6, #FFFAFA);
+            background-image: -o-radial-gradient(cover, #ADD8E6,#FFFAFA);
+			border-radius:5px; 
+			margin-left:500px;
+			margin-top: -440px;
+			display:none;
+			z-index:99;
+		}
+		
+		.row form
+		{
+			width:360px;
+			height:300px
+		}
+		
+		ul button 
+		{
+			margin-left:251px;
+			cursor:pointer;	
+		}
+		ul button:hover
+		{
+			color:#F00;
+		}
+		
+		.content{
+            padding-right: 30px;
+        }
+
+        .content.col-md-4 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+		
+		.btn-primary
+		{
+			width:260px;	
+		}
+
+
+		
+       
+
+        /* 响应式布局 */
+
+        @media (max-width: 768px) {
+            .carousel {
+                height: 300px;
+                margin-bottom: 30px;
+            }
+
+            .carousel .item {
+                height: 300px;
+            }
+
+            .carousel img {
+                min-height: 300px;
+            }
+        }
+
+
+        @media (min-width: 992px) {
+            .feature-heading {
+                margin-top: 120px;
+            }
+        }

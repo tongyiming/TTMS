@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+		.warp
+		{
+			height:680px;	
+		}
+		.left
+		{
+			background:#03F;
+			background-image: -webkit-radial-gradient(cover, #ADD8E6, #FFFAFA);
+			background-image: -moz-radial-gradient(cover, #ADD8E6, #FFFAFA);
+			background-image: -o-radial-gradient(cover, #ADD8E6,#FFFAFA);
+			height:680px;
+			
+		}
+		
+		.right
+		{
+			background:#03F;
+			background-image: -webkit-radial-gradient(cover, #ADD8E6, #FFFAFF);
+			background-image: -moz-radial-gradient(cover, #ADD8E6,#FFFAF);
+			background-image: -o-radial-gradient(cover, #ADD8E6, #FFFAFF);
+			height:680px;
+			
+		}
+		
+		.form-position
+		{
+			width:500px;
+			margin:200px 50px;
+		}
+		
+		.btn-primary
+		{
+			width:365px;	
+		}

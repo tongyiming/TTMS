@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.dao.SeatDAO">
+
+    <!-- insert语句 -->
+    <insert id="insertSeat" parameterType="Seat" keyProperty="id">
+
+        <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
+            SELECT @@IDENTITY
+        </selectKey>
+
+        insert into seat(
+        studio_id,
+        seat_row,
+        seat_col,
+        seat_status)
+        values
+        (
+        #{studio_id},
+        #{seat_row},
+        #{seat_col},
+        #{seat_status})
+    </insert>
+
+    <!-- select语句 -->
+    <select id="selectSeatFromId" parameterType="int" resultType="Seat">
+        select * from seat
+        where seat.id = #{id}
+    </select>
+
+    <select id="selectSeatFromLocation" parameterType="int" resultType="Seat">
+        select * from seat
+        where seat_row = #{0}
+        AND
+        seat_col = #{1}
+    </select>
+
+    <select id="selectSeatFromSeatStatus" parameterType="int" resultType="Seat">
+        select * from seat
+        where seat.seat_status = #{seat_status}
+    </select>
+
+    <select id="selectSeatFromStudioId" parameterType="int" resultType="Seat">
+        select * from seat
+        where studio_id=#{studio_id}
+    </select>
+
+    <!-- update语句 -->
+    <update id="updateSeatFromId" parameterType="Seat">
+        update seat set
+        studio_id=#{studio_id},
+        seat_row=#{seat_row},
+        seat_col=#{seat_col},
+        seat_status=#{seat_status}
+        where id=#{id}
+    </update>
+
+    <!-- delete语句 -->
+    <delete id="deleteSeatFromId" parameterType="int">
+        delete from seat
+        where id=#{id}
+    </delete>
+
+
+</mapper>

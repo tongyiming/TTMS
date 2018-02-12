@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.dao.TicketDAO">
+
+    <!-- insert语句 -->
+    <insert id="insertTicket" parameterType="Ticket" keyProperty="id">
+
+        <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
+            SELECT @@IDENTITY
+        </selectKey>
+
+        insert into ticket(
+        seat_id,
+        sche_id,
+        ticket_price,
+        ticket_status)
+        values
+        (
+        #{seat_id},
+        #{sche_id},
+        #{ticket_price},
+        #{ticket_status})
+    </insert>
+
+    <!-- select语句 -->
+    <select id="selectTicketFromId" parameterType="int" resultType="Ticket">
+        select * from ticket
+        where ticket.id = #{id}
+    </select>
+
+    <!-- update语句 -->
+    <update id="updateTicketFromSeatId" parameterType="Ticket">
+        update ticket set
+        sche_id=#{sche_id},
+        ticket_price=#{ticket_price},
+        ticket_status=#{ticket_status}
+        where seat_id=#{seat_id}
+    </update>
+
+    <!-- delete语句 -->
+    <delete id="deleteTicketFromSeatId" parameterType="int">
+        delete from ticket
+        where seat_id=#{seat_id}
+    </delete>
+
+
+</mapper>

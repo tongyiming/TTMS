@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color: #5a5a5a;
+        }
+#login-register
+		{
+			position:absolute;
+			width:400px; 
+			height:300px; 
+			background:#03F;
+			background-image: -webkit-radial-gradient(cover, #ADD8E6, #FFFAFA);
+			background-image: -moz-radial-gradient(cover, #ADD8E6, #FFFAFA);
+			background-image: -o-radial-gradient(cover, #ADD8E6,#FFFAFA);
+			border-radius:5px; 
+			margin-left:500px;
+			margin-top: 150px;
+			display:none;
+			z-index:99;
+		}
+		
+		
+		.row form
+		{
+			width:360px; 
+			height:300px
+		}
+		
+		ul button 
+		{
+			margin-left:251px;
+			cursor:pointer;	
+		}
+		ul button:hover
+		{
+			color:#F00;
+		}

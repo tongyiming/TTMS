@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header-background
+		{
+			margin-top:0px;
+			width:100%;
+			height:200px;
+			z-index:-999;
+		}
+		
+		.user
+		{
+			position:absolute;
+			z-index:999;
+			margin-left:200px;
+			margin-top:-100px;
+			font-weight:bold;
+			color:#fff;	
+		}
+		
+		
+		.mainbody
+		{
+			position:absolute;
+			margin-left:15%;	
+			margin-top:20px;
+			z-index:-99;
+		}
+		
+		table
+		{
+			width:600px;
+			margin-left:100px;
+			height:200px;
+			border-radius:10px;
+			background-image: -webkit-radial-gradient(cover, #ADD8E6, #FFFAFA);
+			background-image: -moz-radial-gradient(cover, #ADD8E6, #FFFAFA);
+			background-image: -o-radial-gradient(cover, #ADD8E6,#FFFAFA);
+		}
+		 table tr td img
+		 {
+			 border-radius:10px;
+			height:200px;
+			width:150px;	 
+		}
+		
+		hr
+		{
+			margin-left:100px;	
+		}
+		
+		.time
+		{
+			font-size:16px;
+			 color:#CCC;
+			 margin-left:100px;
+		}
+		
+		.row
+		{
+			margin-top:30px;	
+			display:block;
+		}
+		
+		.col-sm-3 a
+		{
+			text-decoration:none;
+		}
+		.col-sm-3 a:hover
+		{
+			color:#fff;
+		}
+		
+		.btn-sm
+		{
+			margin:50px;
+			width:50px;	
+		}
+		
+		.status
+		{
+			width:80px;
+			height:50px;
+			border-radius:40px;
+			margin-top:-50px;
+		}
+
+#menu ul
+{ 
+  	list-style: none; 
+  	margin: 0px;
+  	padding: 0px; 
+}
+  
+		
+#menu ul li ul
+{ 
+  	border: 1px solid #DCDCDC; 
+  	display: none; 
+  	position: absolute;
+}
+  
+  
+#menu ul li ul li 
+{ 
+  	float: none; 
+ 	width: 100px; 
+  	background: #F8F8FF;
+ 	margin: 0;
+}
+  
+#menu ul li ul li:hover 
+{ 
+  	background: #008B8B; 
+  	color: #FFFFFF;
+}
+  
+#menu ul li:hover ul 
+{ 
+  	display: block;
+  	background: #008B8B; 
+}

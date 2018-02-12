@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding-top: 50px;
+	padding-bottom: 40px;
+	color: #5a5a5a;
+	margin-top:-20px;
+	background:#03F;
+	background-image: -webkit-radial-gradient(cover, #ADD8E6, #FFFAFA);
+	background-image: -moz-radial-gradient(cover, #ADD8E6, #FFFAFA);
+	background-image: -o-radial-gradient(cover, #ADD8E6,#FFFAFA);
+}
+
+.col-md-6
+{
+	background:#03F;
+	background-image: -webkit-radial-gradient(cover, #ADD8E6, #FFFAFA);
+	background-image: -moz-radial-gradient(cover, #ADD8E6, #FFFAFA);
+	background-image: -o-radial-gradient(cover, #ADD8E6,#FFFAFA);
+	height:700px;
+}
+#create-ticket
+{
+	margin:100px;
+	border-radius:20px;
+	background:#03F;
+	background-image: -webkit-radial-gradient(cover, #ADD8E6, #FFFAFA);
+	background-image: -moz-radial-gradient(cover, #ADD8E6, #FFFAFA);
+	background-image: -o-radial-gradient(cover, #ADD8E6,#FFFAFA);
+}

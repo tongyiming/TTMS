@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 命名空间 -->
+    <typeAliases>
+        <typeAlias alias="User" type="com.web.entity.User"/>
+        <typeAlias alias="Ticket" type="com.web.entity.Ticket"/>
+        <typeAlias alias="Studio" type="com.web.entity.Studio"/>
+        <typeAlias alias="Seat" type="com.web.entity.Seat"/>
+        <typeAlias alias="Schedule" type="com.web.entity.Schedule"/>
+        <typeAlias alias="Film" type="com.web.entity.Film"/>
+        <typeAlias alias="Order" type="com.web.entity.Order"/>
+    </typeAliases>
+
+
+
+    <!-- 映射map -->
+    <mappers>
+    </mappers>
+</configuration>

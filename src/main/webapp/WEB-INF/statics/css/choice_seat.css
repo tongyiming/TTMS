@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+/* CSS Document */
+body {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color: #5a5a5a;
+			background:#ccc;
+        }
+		
+		#login-register
+		{
+			position:absolute;
+			width:400px; 
+			height:300px; 
+			background:#CF3; 
+			border-radius:5px; 
+			margin-left:500px;
+			margin-top: 150px;
+			display:none;
+			z-index:99;
+		}
+		
+		.row form
+		{
+			width:360px; 
+			height:300px
+		}
+		
+		ul button 
+		{
+			margin-left:251px;
+			cursor:pointer;	
+		}
+		ul button:hover
+		{
+			color:#F00;
+		}
+		
+		.content
+		{
+			margin:20px auto; 
+			height:700px;
+			width:900px;
+			background:#fff;	
+		}
+		
+		.col-md-8
+		{
+			height:100%;
+			border-right:#CCC 2px solid;	
+		}
+		
+		.col-md-4
+		{
+			height:100%;
+		}
+	
+		
+		.col-md-8 p
+		{
+			margin-left:37%;
+		}
+		
+		.col-md-4 p
+		{
+			background:#fF0;
+			line-height:30px;
+			text-align:center;
+			font-size:20px;
+			font-weight:bold;
+		}
+		
+		.mess
+		{
+			line-height:40px;	
+		}
+		
+		.btn-location
+		{
+			margin-left:30%;
+			margin-top:-40px;	
+		}	
+		
+		.content-ticket
+		{
+			margin:60px 0px;	
+			background:#0C9;
+			width:100%;
+			height:100%;
+		}	
+		
+		.mess-color
+		{
+			color:#f00;	
+			font-size:20px;
+			font-weight:bold;
+		}
+		
+		.loca-seat
+		{
+			color:#F00;	
+		}
+		
+		
+
+
+
